@@ -23,6 +23,7 @@ function openmenu() {
 function closemenu() {
   navmenu.style.left = "-40%";
   navmenu.style.position = "fixed";
+  navmenu.style.backgroundColor = "transparent";
 }
 
 const scriptURL =
