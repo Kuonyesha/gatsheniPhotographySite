@@ -219,14 +219,15 @@ ul.socials {
   height: 100vh;
 }
 
-.about-pic {
-  width: 80%;
-  height: 400px;
-  margin-left: 5%;
+.about-pic img {
+  width: 60%;
+  height: 60%;
+  margin-left: 10%;
 
-  background: url(../images/logo.png);
-  background-size: cover;
-  overflow: hidden;
+  /* background: url(../images/logo.png); */
+  /* background-size: cover; */
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
 }
 
 .about-right {
@@ -451,16 +452,12 @@ form textarea {
   border-radius: 6px;
 }
 
-form .btn2 {
+/* form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
-}
-
-#msg {
-  color: green;
-}
+} */
 
 form .btn2 {
   padding: 14px 60px;
@@ -470,6 +467,28 @@ form .btn2 {
   cursor: pointer;
   color: white;
 }
+
+.btn.btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+#msg {
+  color: green;
+}
+
+/* form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+} */
 
 @media only screen and (max-width: 600px) {
   Body {
@@ -508,6 +527,7 @@ form .btn2 {
   #nav-menu {
     width: 60%;
     background: transparent;
+    /* display: none; */
   }
 
   nav {
@@ -575,11 +595,11 @@ form .btn2 {
     flex-direction: column-reverse;
   }
   .work-container {
-    margin-top: 90%;
+    margin-top: 60%;
   }
 
   .photo-grid {
-    margin-top: 150%;
+    margin-top: 100%;
     display: flex;
     /* grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); */
     /* grid-gap: 20px; */
@@ -587,12 +607,15 @@ form .btn2 {
     justify-content: space-evenly;
   }
 
-  .about-pic {
-    width: 100%;
+  .about-pic img {
+    width: 60%;
     height: 60%;
-    background: url(../images/logo.png);
-    background-size: cover;
-    overflow: hidden;
+    margin-left: 10%;
+
+    /* background: url(../images/logo.png); */
+    /* background-size: cover; */
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
   }
 
   .tab-links {
@@ -621,15 +644,11 @@ form .btn2 {
   p {
     margin-top: 5;
     margin-bottom: 1rem;
-    font-size: medium;
+    font-size: small;
   }
 
   .tab-contents ul li br {
     font-size: 8px;
-  }
-
-  .work-container {
-    margin-top: 90%;
   }
 
   /* .about-pic {

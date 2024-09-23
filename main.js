@@ -43,3 +43,19 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+document.getElementById("myForm").onsubmit = function (event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  var formData = new FormData(this);
+
+  fetch("send_email.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      alert(data); // Show a success message
+    })
+    .catch((error) => console.error("Error:", error));
+};
