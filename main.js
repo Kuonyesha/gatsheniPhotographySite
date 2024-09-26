@@ -1,5 +1,5 @@
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+let tablinks = document.getElementsByClassName("tab-links");
+let tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabname) {
   for (tablink of tablinks) {
@@ -13,17 +13,44 @@ function opentab(tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-var navmenu = document.getElementById("nav-menu");
+// let navtoggle = document.getElementsByClassName("nav-toggle");
+let submenu = document.getElementById("sub-menu");
+
+// function openmenu() {
+//   // submenu.classList.toggle("active-link"); // Toggle active class
+
+//   // event.currentTarget.classList.add("active-link");
+//   submenu.style.left = "0";
+//   submenu.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+// }
+
+// function closemenu() {
+//   submenu.style.left = "-200px";
+//   submenu.style.position = "fixed";
+//   submenu.style.backgroundColor = "transparent";
+// }
 
 function openmenu() {
-  navmenu.style.left = "0";
-  navmenu.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  document.getElementById("sub-menu").style.display = "block";
+  document.getElementById("sub-menu").style.backgroundColor =
+    "rgba(0, 0, 0, 0.5)";
+  document.getElementById("sub-menu").style.width = "40%";
+  document.getElementById("sub-menu").style.height = "40vh";
+  document.getElementById("sub-menu").style.position = "fixed";
+  document.getElementById("sub-menu").style.top = "0";
+  document.getElementById("sub-menu").style.left = "0";
+  document.getElementById("sub-menu").style.transition =
+    "0.5s linear ease-in-out";
+  document.getElementById("sub-menu").style.zIndex = "9999";
+  document.getElementById("sub-menu").style.borderRadius = "10px";
+  document.querySelector("i.fas.fa-bars").style.display = "none";
+  document.querySelector("i.fas.fa-times").style.display = "block";
 }
 
 function closemenu() {
-  navmenu.style.left = "-40%";
-  navmenu.style.position = "fixed";
-  navmenu.style.backgroundColor = "transparent";
+  document.getElementById("sub-menu").style.display = "none";
+  document.querySelector("i.fas.fa-bars").style.display = "block";
+  document.querySelector("i.fas.fa-times").style.display = "none";
 }
 
 const scriptURL =

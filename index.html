@@ -29,6 +29,8 @@
     />
 
     <link rel="icon" href="./images/logo.png" />
+
+    <script src="http://localhost:3002"></script>
     <title>Photographer portfolio</title>
   </head>
   <body>
@@ -38,8 +40,7 @@
     <div class="containing-image">
       <header id="header" class="main-container-header">
         <nav>
-          <ul id="nav-menu">
-            <i class="fas fa-times" onclick="closemenu()"></i>
+          <ul id="sub-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
@@ -47,6 +48,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
+          <i class="fas fa-times" onclick="closemenu()"></i>
         </nav>
       </header>
 
@@ -56,7 +58,7 @@
         <div class="container">
           <div class="typing-animation">
             <h1>
-              We do : <br />
+              We do <br />
               <span id="typewriter"></span>
             </h1>
             <h6>Mpikoko HD Productions</h6>
