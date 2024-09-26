@@ -35,7 +35,7 @@ function openmenu() {
   document.getElementById("sub-menu").style.backgroundColor =
     "rgba(0, 0, 0, 0.5)";
   document.getElementById("sub-menu").style.width = "40%";
-  document.getElementById("sub-menu").style.height = "40vh";
+  document.getElementById("sub-menu").style.height = "30vh";
   document.getElementById("sub-menu").style.position = "fixed";
   document.getElementById("sub-menu").style.top = "0";
   document.getElementById("sub-menu").style.left = "0";
@@ -45,12 +45,22 @@ function openmenu() {
   document.getElementById("sub-menu").style.borderRadius = "10px";
   document.querySelector("i.fas.fa-bars").style.display = "none";
   document.querySelector("i.fas.fa-times").style.display = "block";
+  document.querySelector("i.fas.fa-times").style.backgroundColor =
+    "rgba(0, 0, 0, 0.8)";
+  document.querySelector("i.fas.fa-times").style.color = "white";
+  document.querySelector("i.fas.fa-times").style.padding = "10px";
+  document.querySelector("i.fas.fa-times").style.borderRadius = "50%";
 }
 
 function closemenu() {
   document.getElementById("sub-menu").style.display = "none";
   document.querySelector("i.fas.fa-bars").style.display = "block";
   document.querySelector("i.fas.fa-times").style.display = "none";
+  document.querySelector("i.fas.fa-bars").style.backgroundColor =
+    "rgba(0, 0, 0, 0.8)";
+  document.querySelector("i.fas.fa-bars").style.color = "white";
+  document.querySelector("i.fas.fa-bars").style.padding = "10px";
+  document.querySelector("i.fas.fa-bars").style.borderRadius = "50%";
 }
 
 const scriptURL =
