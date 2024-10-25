@@ -64,7 +64,8 @@ function closemenu() {
 }
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbwvVtUVr2Exhsu5pz6uLzIL9whVndukp-bT5izhqvg5hQ_BGgUMRAQFhpihLDz_aXV29A/exec";
+  "https://script.google.com/macros/s/AKfycbz03qwRea50sJEAYApryNx4BTYOVLWWrXrvj7wpDfmP/dev";
+
 const form = document.forms["submit-to-google-sheet"];
 const msg = document.getElementById("msg");
 
@@ -84,7 +85,7 @@ form.addEventListener("submit", (e) => {
 document.getElementById("myForm").onsubmit = function (event) {
   event.preventDefault(); // Prevent the default form submission
 
-  var formData = new FormData(this);
+  let formData = new FormData(this);
 
   fetch("send_email.php", {
     method: "POST",
@@ -96,3 +97,30 @@ document.getElementById("myForm").onsubmit = function (event) {
     })
     .catch((error) => console.error("Error:", error));
 };
+
+// const animatedElement = document.querySelector(".photo-item-1");
+// const elementTop = animatedElement.offsetTop;
+
+// window.addEventListener("scroll", () => {
+//   const scrollTop = window.pageYOffset;
+
+//   if (scrollTop >= elementTop) {
+//     animatedElement.classList.add("show");
+//   } else {
+//     animatedElement.classList.remove("show");
+//   }
+// });
+
+// const animatedElement = document.querySelector(".photo-item-1");
+
+// window.addEventListener("scroll", () => {
+//   const scrollTop = window.pageYOffset;
+//   const elementTop = animatedElement.offsetTop;
+//   const elementBottom = elementTop + animatedElement.offsetHeight;
+
+//   if (scrollTop >= elementTop && scrollTop <= elementBottom) {
+//     animatedElement.classList.add("show");
+//   } else {
+//     animatedElement.classList.remove("show");
+//   }
+// });
