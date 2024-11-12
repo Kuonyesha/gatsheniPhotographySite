@@ -99,9 +99,10 @@ li {
 }
 
 .containing-image {
-  background: url(../images/20190831-DSC_2667.jpg);
+  background: url(../images/Untitled-3-big.png);
   background-size: cover;
   overflow: hidden;
+  object-fit: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
@@ -250,8 +251,8 @@ ul.socials {
   margin-top: 10%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-
-  grid-gap: 20px;
+  /* width: 100vw; */
+  grid-gap: 30px;
 }
 
 .video-grid {
@@ -262,28 +263,50 @@ ul.socials {
 }
 
 .photo-item {
-  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  /* position: relative; */
   overflow: hidden;
+  background-size: cover;
 }
 
 .photo-item-1 {
-  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
   overflow: hidden;
+  background-size: cover;
 }
 
 .photo-item img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-item-1 img {
+  width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
-/* .photo-item-1 img {
+.photo-item-11 {
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+  overflow: hidden;
+  background-size: cover;
+}
+
+.photo-item-11 img {
   width: 100%;
   height: auto;
   object-fit: cover;
+
   transition: transform 0.3s ease-in-out;
-} */
+}
 
 .overlay {
   position: absolute;
@@ -314,12 +337,12 @@ ul.socials {
 
 .photo-item-1 {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .photo-item-1 img {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-size: cover;
 }
 
@@ -469,17 +492,37 @@ nav .fas {
   display: none;
 }
 
-.photo-item img {
+.photo-item {
   animation: updown 5s ease-in;
-  transform: translateY(20px);
+  transform: translateY(5px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.photo-item-1 img {
+/* .photo-item img {
+  animation: updown 5s ease-in;
+  transform: translateY(5px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+} */
+
+.photo-item-1 {
+  animation: updown 2s ease-in;
+  transform: translateY(5px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.photo-item-11 {
+  height: 100%;
+  margin-top: 2%;
+  animation: updown 5s ease-in;
+  transform: translateY(5px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* .photo-item-11 img {
   animation: updown 2s ease-in;
   transform: translateY(20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
+} */
 
 .copyright {
   padding: 1%;
@@ -525,7 +568,7 @@ nav .fas {
   }
 
   .containing-image {
-    background: url(../images/20190831-DSC_2667.jpg);
+    background: url(../images/Untitled-3-big.png);
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -589,12 +632,12 @@ nav .fas {
   }
 
   #work {
-    margin-top: 200%;
+    margin-top: 300%;
   }
 
   .work-container {
     margin-top: 80%;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -602,12 +645,84 @@ nav .fas {
   .photo-grid {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-around; */
   }
 
   .photo-item {
+    animation: updown 5s ease-in;
+    transform: translateY(2px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .photo-item img {
+    animation: updown 5s ease-in;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .photo-item-1 img {
+    animation: updown 2s ease-in;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .photo-item-11 {
+    animation: updown 5s ease-in;
+    transform: translateY(2px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .photo-item-11 img {
+    animation: updown 2s ease-in;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .photo-item {
+    width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
-    margin-top: 2%;
+  }
+
+  .photo-item-1 {
+    /* width: 100vw;
+    height: 100vh; */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .photo-item-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .photo-item-11 {
+    margin-top: 20%;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* position: relative;
+    overflow: hidden; */
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-item-11 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
   }
 
   .about-container {
@@ -618,6 +733,8 @@ nav .fas {
   .about-grid {
     display: flex;
     flex-direction: column-reverse;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .about-left {
@@ -649,11 +766,19 @@ nav .fas {
     height: 100%;
   }
 
+  dl,
+  ol,
+  ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: small;
+  }
+
   #contact {
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    margin-bottom: 20%;
+    margin-bottom: 50%;
   }
 
   .contact form input {
@@ -708,12 +833,13 @@ nav .fas {
   }
 
   .containing-image {
-    background: url(../images/20190831-DSC_2667.jpg);
+    background: url(../images/Untitled-3-big.png);
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    object-fit: cover;
+    /* height: 100vh; */
   }
 
   nav .fas {
